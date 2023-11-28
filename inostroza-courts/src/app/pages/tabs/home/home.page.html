@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-list>
+    <ion-item *ngFor="let car of cars">
+      <ion-card>
+        <img alt="" src="" />
+        <ion-card-header>
+          <ion-card-title>{{ car.name }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>Dirección : {{ car.address }}</p>
+          <p>Teléfono : {{ car.phone }}</p>
+          <p>Valor Arriendo : {{ car.price }}</p>
+          <p><ion-icon name="star-sharp"></ion-icon> {{ car.rating }}</p>
+        </ion-card-content>
+      </ion-card>      
+    </ion-item>
+  </ion-list>
+</ion-content>

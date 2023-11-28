@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Soccer Fields</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p>
+    Bienvenido, nosotros te ayudamos a conseguir rentar un auto lo más rapido posible
+  </p>
+  <hr />
+  <p>
+    Para comenzar, clickea en localización, para conseguir aquellos autos que se encuentren cerca de ti.
+  </p>
+  <ion-icon name="arrow-down-outline"></ion-icon>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Main</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="locations">
+        <ion-icon name="map-outline"></ion-icon>
+        <ion-label>Locations</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-icon name="settings-outline"></ion-icon>
+        <ion-label>Settings</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="logout">
+        <ion-icon name="log-out-outline"></ion-icon>
+        <ion-label>Logout</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
